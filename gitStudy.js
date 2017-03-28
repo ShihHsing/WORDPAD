@@ -16,6 +16,6 @@ git rm <fileName> 并 git commot <fileName> // 从版本库中删除文件
 git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 == 一键还原
 git remote add origin git@server-name:path/repo-name.git // 关联远程仓库
 git push -u origin master // 第一次推送master分支的所有内容
-git oush origin master // 推送最新修改
+git push origin master // 推送最新修改
 git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 == 一键还原
 git clone github@url // 从远程库拷贝项目到本地文件夹
