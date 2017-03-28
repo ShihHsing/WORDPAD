@@ -13,7 +13,11 @@ git checkout -- <fileName> // 将文件在工作区的修改全部撤销
 git reset HEAD <fileName> // 可以吧暂存区的修改回退到工作区 使用HEAD时 表示最新版本
 rm <fileName> // 删除文件
 git rm <fileName> 并 git commot <fileName> // 从版本库中删除文件
+<<<<<<< HEAD
 git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 == 一键还原
 git remote add origin git@server-name:path/repo-name.git // 关联远程仓库
 git push -u origin master // 第一次推送master分支的所有内容
 git oush origin master // 推送最新修改
+=======
+git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 == 一键还原
+>>>>>>> dddcb7b096ad681fec656c775cfc47ce01888462
