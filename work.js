@@ -9,6 +9,8 @@
 // // 分享公众号
 // // 九宫格大转盘
 // // 分享后用户多一次抽奖机会
+//
+// 学习https://github.com/Stevenzwzhai/vue2.0-elementUI-axios-vueRouter(axios的使用)
 
 // 杂记
 // 13684954361
