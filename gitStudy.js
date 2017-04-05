@@ -26,5 +26,10 @@ git branch -d <name> // 删除指定分支 <name>(目前指定分支) Fast-forwa
 git log --graph // 查看分支合并图
 // Fast forward模式 删除分支后 会丢掉分支信息
 git merge --no-ff -m "XXX" <name> // --no-ff参数，表示禁用Fast forward -m参数 把commit描述写进去
-
 //修改Bug --- 101
+git stash // 把当前工作现场“储藏”起来 恢复现场后继续工作 
+git stash list // 查看"储藏"起来的工作现场
+git stash apply  // 恢复工作现场后 不删除记录
+git stash drop // 删除储藏现场的记录
+git stash pop // 恢复 并删除记录
+git stash apply stash@{0} // 可以多次stash 并可以恢复指定stash
