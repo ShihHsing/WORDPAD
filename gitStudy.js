@@ -21,4 +21,5 @@ git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 =
 git clone github@url // 从远程库拷贝项目到本地文件夹
 git checkout -b dev === git branch dev, git checkout dev // 创建新分支 dev 并切换到新分支
 git branch // 查看所有分支 当前分支前 * 标记
-git merge dev // 合并分支 当前分支内容合并到 指定分支内容 ---> dev(目前指定分支)
+git merge dev // 合并分支 指定分支内容 合并到当前分支 ---> dev(目前指定分支)
+git branch -d dev // 删除指定分支 dev(目前指定分支) Fast-forward(快进模式) 直接把master指向dev的当前提交
