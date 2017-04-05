@@ -19,3 +19,6 @@ git push -u origin master // 第一次推送master分支的所有内容
 git push origin master // 推送最新修改
 git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 == 一键还原
 git clone github@url // 从远程库拷贝项目到本地文件夹
+git checkout -b dev === git branch dev, git checkout dev // 创建新分支 dev 并切换到新分支
+git branch // 查看所有分支 当前分支前 * 标记
+git merge dev // 合并分支 当前分支内容合并到 指定分支内容 ---> dev(目前指定分支)
