@@ -24,4 +24,5 @@ git branch // 查看所有分支 当前分支前 * 标记
 git merge <name> // 合并分支 指定分支内容 合并到当前分支 ---> <name>(目前指定分支)
 git branch -d <name> // 删除指定分支 <name>(目前指定分支) Fast-forward(快进模式) 直接把master指向<name>的当前提交
 git log --graph // 查看分支合并图
-//分支管理
+// Fast forward模式 删除分支后 会丢掉分支信息
+git merge --no-ff -m "XXX" <name> // --no-ff参数，表示禁用Fast forward -m参数 把commit描述写进去
