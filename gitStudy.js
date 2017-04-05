@@ -50,4 +50,26 @@ git remote -v // 查看远程仓库名称
 // 2.推送失败 则因为远程分支比你的本地更新 需要先用git pull试图合并
 // 3.合并有冲突 解决冲突 在本地提交
 // 4.没有冲突或者解决掉冲突后 用git push origin branch-name推送
-// 5.如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。
+// 5.如果git pull提示“no tracking information” 说明本地分支和远程分支的链接关系没有创建 用命令git branch --set-upstream branch-name origin/branch-name。
+
+git tag <name> // 打一个新标签
+git tag // 查看所有标签
+git show <tagName> //可查看指定标签详细信息
+git tag -a <tagname> -m "XXX..." // 可以指定标配信息
+git tag -d <tagNmae> // 可以删除指定标签
+git push origin <tagName> // 推送标签到远程服务器
+git push origin --tags // 推送本地全部标签到远程服务器
+git push origin :refs/tags/<tagName> // 删除远程服务器标签 ---> 首先删除本地标签
+git config --global color.ui true // git显示颜色
+git add -f <fileName> // 强制添加文件
+
+// git命令别名 ---> 英文好&&熟练的同学可以这样干
+// Git配置文件都放在.git/config文件中
+// 可修改git配置文件 例如 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+// user执行 git lg 
+// git执行 log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+// 加上--global是针对当前用户起作用的 不加 只针对当前的仓库起作用
+
+// 鼓励偷懒 !!! //
