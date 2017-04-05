@@ -17,6 +17,7 @@ git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 =
 git remote add origin git@server-name:path/repo-name.git // 关联远程仓库
 git push -u origin master // 第一次推送master分支的所有内容
 git push origin master // 推送最新修改
+git pull // 从远程拉去最新版本到工作空间
 git checkout -- <fileName> // 用版本库里的版本替换工作区的版本 == 一键还原
 git clone github@url // 从远程库拷贝项目到本地文件夹
 git checkout -b <name> === git branch <name>, git checkout <name> // 创建新分支 <name> 并切换到新分支
@@ -33,3 +34,20 @@ git stash apply  // 恢复工作现场后 不删除记录
 git stash drop // 删除储藏现场的记录
 git stash pop // 恢复 并删除记录
 git stash apply stash@{0} // 可以多次stash 并可以恢复指定stash
+git branch -D feature-vulcan // 强行删除指定分支
+git remote -v // 查看远程仓库名称
+
+// master分支是主分支，因此要时刻与远程同步；
+
+// dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+
+// bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；
+
+// feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
+
+// 多人协作模式
+// 1.用git push origin branch-name推送自己的修改
+// 2.推送失败 则因为远程分支比你的本地更新 需要先用git pull试图合并
+// 3.合并有冲突 解决冲突 在本地提交
+// 4.没有冲突或者解决掉冲突后 用git push origin branch-name推送
+// 5.如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。
