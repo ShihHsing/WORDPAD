@@ -2,6 +2,6 @@
 ====
 [工作安排](https://github.com/AbandonedDrama/nodeJS-study/blob/master/work.js)
 ---
-发发牢骚
+[git学习](https://github.com/AbandonedDrama/nodeJS-study/blob/master/gitStudy.js)
 ---
 >坚持每天都更新啊~~~
