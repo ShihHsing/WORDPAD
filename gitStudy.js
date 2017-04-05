@@ -26,3 +26,5 @@ git branch -d <name> // 删除指定分支 <name>(目前指定分支) Fast-forwa
 git log --graph // 查看分支合并图
 // Fast forward模式 删除分支后 会丢掉分支信息
 git merge --no-ff -m "XXX" <name> // --no-ff参数，表示禁用Fast forward -m参数 把commit描述写进去
+
+//修改Bug --- 101
