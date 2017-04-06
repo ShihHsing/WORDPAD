@@ -86,3 +86,5 @@ git add -f <fileName> // 强制添加文件
 // /<fileName>/* 忽略更目录下的<fileName>下的全部内容
 // /* 忽略全部内容
 // !<fileName> 不忽略<filName>
+
+// git config --list 查看 git 的配置信息
