@@ -95,11 +95,11 @@ const name = 'shixin';//javaScript
 | 表格单元   | 表格单元   |
 | 表格单元   | 表格单元   |
 
-| 左对齐 | 居中  | 右对齐 |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
+| 左对齐        | 居中                 | 右对齐            |
+| :------------ |:--------------------:| -----------------:|
+| left left left| center center center | right right right |
+| left left     | center center        | right right       |
+| left          | center               | right             |
 
 | 名字 | 描述          |
 | ------------- | ----------- |
