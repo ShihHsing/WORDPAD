@@ -41,6 +41,7 @@
 // 视频模板适配(完成)
 // 学习webpack
 // sublime 设置ESLint
+// github md文件不展示 pull--二进制文件
 
 // 4.07
 // 不想上班:(
