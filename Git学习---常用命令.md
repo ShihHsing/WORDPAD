@@ -58,6 +58,7 @@ git push origin :refs/tags/<tagName> | 删除远程服务器标签 ---> 首先�
 git config --global color.ui true | git显示颜色
 git add -f <fileName> | 强制添加文件
 git config --list |查看 git 的配置信息
+git config --global core.quotepath false | 不对 0x80 以上的字符进行转义 中文乱码时使用
 提示| git命令别名 ---> 英文好&&熟练的同学可以这样干
 提示| Git配置文件都放在.git/config文件中
 提示| 可修改git配置文件 例如 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
