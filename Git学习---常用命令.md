@@ -66,16 +66,24 @@ user执行 | git执行
 git lg | log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 说明| 加上--global是针对当前用户起作用的 不加 只针对当前的仓库起作用
 > 鼓励偷懒!!!
+---
 
 ### .gitignore配置
 git| .gitignore配置
 :---:|---
---| 以斜杠“/”开头表示目录；
---| 以星号“*”通配多个字符；
---| 以问号“?”通配单个字符
---| 以方括号“[]”包含单个字符的匹配列表；
---| 以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；
---| <fileName>/* 忽略所有<fileName>文件下的全部内容
---| /<fileName>/* 忽略更目录下的<fileName>下的全部内容
---| /* 忽略全部内容
---| !<fileName> 不忽略<filName>
+“/”开头| 以斜杠“/”开头表示目录；
+* | 以星号“*”通配多个字符；
+? | 以问号“?”通配单个字符
+[]| 以方括号“[]”包含单个字符的匹配列表；
+! | 以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；
+<fileName>/* | 忽略所有<fileName>文件下的全部内容
+/<fileName>/* | 忽略更目录下的<fileName>下的全部内容
+/*  | 忽略全部内容
+!<fileName>  | 不忽略<filName>
+---
+
+### NPM
+命令 | 说明
+-----|-----
+npm config set registry <url> | 更换访问地址 
+---
