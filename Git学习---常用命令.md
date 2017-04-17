@@ -30,6 +30,7 @@ git branch -d <name> | 删除指定分支 <name>(目前指定分支) Fast-forwar
 git log --graph | 查看分支合并图
 Fast forward| Fast forward模式 删除分支后 会丢掉分支信息
 git merge --no-ff -m "XXX" <name> | --no-ff参数，表示禁用Fast forward -m参数 把commit描述写进去
+git reflog show --date=iso <branch name> | 查看分支
 git stash | 把当前工作现场“储藏”起来 恢复现场后继续工作 
 git stash list | 查看"储藏"起来的工作现场
 git stash apply  | 恢复工作现场后 不删除记录
@@ -66,6 +67,7 @@ user执行 | git执行
 git lg | log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 说明| 加上--global是针对当前用户起作用的 不加 只针对当前的仓库起作用
 > 鼓励偷懒!!!
+
 ---
 
 ### .gitignore配置
