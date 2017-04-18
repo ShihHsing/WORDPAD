@@ -5,7 +5,9 @@
 [SublimeLinter](http://sublimelinter.readthedocs.org/en/latest/installation.html "安装指南")  
 [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation "安装指南")  
 > 到这里ESLint就算安装完成了,若有Bug无法正常使用请查看[SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation "安装指南")
-#### 3.Vue项目中配置ESLint
+#### 3.Vue项目中配置ESLint  
+`npm install eslint-config-vue eslint-plugin-vue eslint-plugin-vue`
+
 `.eslintignore 文件`
 ```eslintignore
 // eslint 检测时，要忽略掉这些目录
@@ -14,28 +16,15 @@
 ```
 `.eslintrc 文件`
 ```javascript
-{
-  "root": true,  
-  // 在待检测文件的同一目录查找配置文件
-  // 往上逐层父级目录查找，直到发现一个有 "root": true 的
-  // 使用项目根目录配置文件
-  // 使用系统全局配置文件
-  
-  "parser": "babel-eslint",
-  // 使用非默认的 babel-eslint 作为代码解析器，同时你需要安装相应 node 模块
-  // npm install -save-dev babel-eslint
-  // 这样 eslint 就能识别 babel 语法的代码
-  
-  "extends": "vue",
-  
-  "plugins": ["flow-vars"],
-  // 让 eslint 支持 Flow Script 的全局注解等语法，同时你也要安装对应的 node 模块
-  // npm install -save-dev eslint-plugin-flow-vars
-
+{ // 这里我使用的是vue分装好的 推荐语法
+  {
+  "extends": ["vue"],
+  "plugins": ["vue"],
   "rules": {
-    "flow-vars/define-flow-type": 1,
-    "flow-vars/use-flow-type": 1
+    "vue/jsx-uses-vars": 2,
+    "handle-callback-err": 0
   }
+}
 }
 ```
 
